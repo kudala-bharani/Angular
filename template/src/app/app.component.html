@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px; /* Adding padding to create space for the border */
+      box-sizing: border-box; /* Including padding in element's dimensions */
+    }
+    .content-container {
+      border: 5px solid #ffcc00; /* Adding yellow border around the content */
+      padding: 20px; /* Adding padding inside the border */
+      box-sizing: border-box; /* Including border and padding in element's dimensions */
+    }
+    h1, h2 {
+      color: #ffa500;
+      text-align: center;
+    }
+    input[type="text"] {
+      padding: 8px;
+      border: 1px solid #ffa500;
+      background-color: #2a2a2a;
+      color: #ffffff;
+    }
+    input[type="button"] {
+      padding: 8px 15px;
+      background-color: #ffa500;
+      border: none;
+      color: #1e1e1e;
+      cursor: pointer;
+    }
+    input[type="button"]:hover {
+      background-color: #ff8c00;
+    }
+    p {
+      text-align: center;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-container">
+    <h1>Template</h1>
+    <br> 
+    <h2>{{title}}</h2>
+    <br>
+    <p>
+      <b>Enter :</b>
+      <input type="text" [(ngModel)]="title"><br><br>
+      <input type="button" (click)="display()" value="Press">
+    </p>
+    <p>
+      <app-comp1></app-comp1>
+    </p>
+  </div>
+</body>
+</html>

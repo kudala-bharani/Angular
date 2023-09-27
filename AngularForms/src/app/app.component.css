@@ -1,0 +1,47 @@
+body{
+  background-color: #333;
+  color: white;
+}
+
+input[type=text], input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #555; /* Dark border color */
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #2071f5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #66a1ff;
+}
+
+.form, .form-data {
+  border-radius: 5px;
+  background-color: black; /* Darker background color */
+  padding: 20px;
+  width: 400px;
+  margin: 30px auto;
+}
+
+input.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
+
+small {
+  color: red;
+}
