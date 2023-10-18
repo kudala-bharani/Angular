@@ -1,0 +1,12 @@
+<div id="main" ng-app>  
+  <div class="menu">Menu bar with Angularjs</div>  
+  <nav class="{{active}}" ng-click="$event.preventDefault()">  
+      <a href="#" class="home" ng-click="active='Home'">Home</a>  
+      <a href="#" class="Event" ng-click="active='Event'">Event</a>  
+      <a href="#" class="Admission" ng-click="active='Admission'">Admission</a>  
+      <a href="#" class="About" ng-click="active='About'">About</a>  
+      <a href="#" class="contact" ng-click="active='Contact'">Contact</a>  
+</nav>  
+  <p ng-hide="active">Please Select a menu item</p>  
+  <p ng-show="active">You Select : <b>{{active}}</b></p>  
+</div> 
